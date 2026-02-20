@@ -6,10 +6,19 @@ Implementar una solución de gobernanza de datos automatizada para el dataset de
 
 
 ## Arquitectura Técnica
-Origen de Datos: Azure SQL Database (Dataset Olist Store).
 
-Motor de Gobernanza: Microsoft Purview.
+Ingesta Inicial: Carga y sincronización de archivos CSV locales hacia Azure SQL Database.
 
-Identidad y Seguridad: Managed Identity (MSI) con permisos específicos de nivel db_owner y VIEW DEFINITION para la extracción de metadatos.
+Almacenamiento: Repositorio estructurado en Azure SQL como fuente única de verdad.
 
-Proceso: Configuración de Scans automáticos con niveles de detección profunda para la clasificación de datos sensibles.
+Motor de Gobernanza: Microsoft Purview, configurado para el descubrimiento de activos y linaje.
+
+Seguridad y Permisos: Uso de Managed Identity (MSI) con permisos db_owner y VIEW DEFINITION para la extracción de metadatos.
+
+Proceso: Ejecución de Scans automáticos con detección profunda para la clasificación de datos sensibles.
+
+
+# Resultados
+Catalogación y Eficiencia: Ingesta automatizada de las tablas de Clientes, Pedidos y Productos, eliminando el mantenimiento de diccionarios manuales y acelerando el descubrimiento de datos para los analistas.
+
+Clasificación y Cumplimiento (GDPR): Identificación autónoma de datos sensibles de geolocalización y privacidad, permitiendo una gestión de riesgos proactiva y alineada con normativas internacionales.

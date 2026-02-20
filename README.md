@@ -1,4 +1,4 @@
-# Azure-pipeline-for-Data-Gobernance-From-SQL-Source-to-Azure-Purview
+# Azure pipeline fornData Gobernance From SQL Source to Azure Purview
 
 
 Objetivo del Proyecto

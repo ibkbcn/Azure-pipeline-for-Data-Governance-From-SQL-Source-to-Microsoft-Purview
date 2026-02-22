@@ -24,4 +24,5 @@ Catalogación: Catalogación automatizada de las tablas de Clientes, Pedidos, Pr
 Clasificación y Cumplimiento (GDPR): Identificación autónoma de datos sensibles de geolocalización y privacidad, permitiendo una gestión de riesgos proactiva y alineada con normativas internacionales.
 
 
-[!IMPORTANT] Nota técnica: Para profundizar en la configuración y ver el paso a paso detallado, consulte el PDF de la guía de implementación adjunto en este repositorio.
+### 📄 Nota técnica
+Para profundizar en la configuración y ver el paso a paso detallado, consulte el **[PDF de la guía de implementación](./nombre-de-tu-archivo.pdf)** adjunto en este repositorio.
